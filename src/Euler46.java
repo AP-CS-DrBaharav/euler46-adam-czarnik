@@ -17,7 +17,7 @@
  * 
  * If it helps your program, you can rely on the fact the result number is smaller than 6000.
  * 
- * Answer: ________  <== You fill in (you can check on Euler Project)
+ * Answer: ____5777____  <== You fill in (you can check on Euler Project)
  */
 
 import java.util.ArrayList;
