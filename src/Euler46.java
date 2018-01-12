@@ -33,6 +33,21 @@ public class Euler46 {
 
         // ToDo: Your code here  
         // You are welcome to use the isPrime function below.
+        boolean found = true;
+        while (found) {
+            n += 2;
+            if (!isPrime(n)) {
+                found = false;
+                System.out.print(n + " = ");
+                for (int i=1; i*i*2<n && !found; ++i) {
+                    if (isPrime(n-(2*i*i))) {
+                        int d = n-(2*i*i);
+                        found = true;
+                        System.out.println(d + "+2*" + i + "^2");
+                    }
+                }
+            }
+        }
         
         System.out.printf("Doesn't work for n=%3d!! done.\n", n);
         
